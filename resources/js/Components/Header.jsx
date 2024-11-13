@@ -1,14 +1,12 @@
-import { cn } from '@/lib/utils'
-import React from 'react'
+import { cn } from '@/lib/utils';
 
-export default function Header({className, title, subTitle}) {
-  return (
-    <div className={cn(className, mb-8)}>
-        <div className='mx-auto flex flex-col gap-x-8 lg:mx-0'>
-            <h3 className='text-2xl font-bold leading-relaxed tracking-tighter text-foreground'>{title}</h3>
-            <h3 className='text-sm leading-relaxed tracking-tighter text-muted-foreground'>{subTitle}</h3>
-
+export default function Header({ className, title, subTitle }) {
+    return (
+        <div className={cn(className, mb - 8)}>
+            <div className="mx-auto flex flex-col gap-x-8 lg:mx-0">
+                <h3 className="text-2xl font-bold leading-relaxed tracking-tighter text-foreground">{title}</h3>
+                <h3 className="text-sm leading-relaxed tracking-tighter text-muted-foreground">{subTitle}</h3>
+            </div>
         </div>
-    </div>
-  )
+    );
 }
